@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <p class="coffee text-center"  style="font-size: 50px; margin-top: 40px;">404 Not Found!</p>
+</body>
+</html>
+
+<script type="text/javascript">
+    var data = {
+        "p1":{
+            "image":"images/art/p1.jpg",
+            "title":"dfsafaf",
+            "info": "fafasafasfajilfjofoailjfojfoafajlflajfl"
+        }
+        ,
+        "p2":{
+            "image":"images/art/p2.jpg",
+            "title":"afgahahaf",
+            "info": "ahjifklfhakslfjhfjklahfklhklfcahjklfvhjkhjfkasdhfjashjkfhkjhflaff"
+        },
+        "p3":{
+            "image":"images/art/p3.jpg",
+            "title":"jalk;fja;lfj;ajf;ffa;fj;",
+            "info": "fafasafasfajilfjofoailjfojfoafajlflajfl"
+        }
+    }
+    window.onload = function(){
+        var imageId=window.location.search.substring(1);
+            // console.log(imageId)
+            console.log(data[imageId])
+            document.getElementById("objInfo").innerHTML=data[imageId].info;
+            document.getElementById("objTitle").innerHTML=data[imageId].title;
+            document.getElementById("objImage").src=data[imageId].image;
+
+    }
+        
+        
+    </script>

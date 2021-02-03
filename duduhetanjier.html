@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dudu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <p style="font-size: 30px; font-family: youyuan;" class="coffee text-center">芜湖</p>
+    <section class="site-section" id="section-Funziona">
+        <div class="masonryholder">
+            <div class="masonryblocks">
+                <!-- <a href="artInfo.html"></a> -->
+                <img id="p1" src="/images/shile.PNG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p2" src="/images/duduMouse.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p3" src="/images/duduMouse2.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p4" src="/images/phone.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+        </div>
+        <button
+            style="margin-left: 40%; background-color: #F7ABAD; border: none; font-family: youyuan; font-size: 25px;"
+            onclick="xigua()">芜湖 ⬅️</button>
+    </section>
+     <!-- 西瓜 -->
+    <section class="site-section" style="display: none;" id="section-xigua">
+        <p style="font-family: youyuan;font-size: 25px;" class="text-center coffee">芜湖</p>
+        <br>
+        <div class="masonryholder">
+            <div class="masonryblocks">
+                <!-- <a href="artInfo.html"></a> -->
+                <img id="p1" src="/images/suofen.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p2" src="/images/mao.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p3" src="/images/oshi.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+        </div>
+        <button
+            style="margin-left: 40%; background-color: #F7ABAD; border: none; font-family: youyuan; font-size: 25px;"
+            onclick="love()">芜湖 ⬅️</button>
+    </section>
+
+    <!-- love -->
+    <section class="site-section" style="display: none;" id="section-love">
+        <br>
+        <div class="masonryholder">
+            <div class="masonryblocks">
+                <!-- <a href="artInfo.html"></a> -->
+                <img id="p1" src="/images/fly.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p2" src="/images/motor.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">芜湖</p>
+            </div>
+            <div class="masonryblocks">
+                <img id="p2" src="/images/kiss.JPG" alt="">
+                <p style="font-family: youyuan;" class="text-center coffee">😘</p>
+            </div>
+        </div>
+        <button
+            style="margin-left: 40%; background-color: #F7ABAD; border: none; font-family: youyuan; font-size: 25px;"
+            onclick="typing();zi();" ">芜湖 ⬅️</button>
+    </section>
+    <!-- 生日 -->
+    <div style="margin-left: 10%; margin-right: 10%; display: none;" id="section-birth">
+        <div id="typing" class="coffee" style="font-family: youyuan; font-size: 25px;"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+<script>
+    function xigua() {
+        var xigua = document.getElementById('section-xigua');
+        xigua.style.display = 'block';
+    }
+    function love() {
+        var love = document.getElementById('section-love');
+        love.style.display = 'block';
+    }
+
+    function zi(){
+        var hua = document.getElementById('hua');
+        hua.style.display = 'block';
+    }
+    
+    var birth = document.getElementById('section-birth');
+    var str = 'To：芜湖<br>芜湖芜湖芜湖芜湖芜湖芜湖<br>芜湖芜湖芜湖芜湖芜湖<br>芜湖<br>芜湖芜湖芜湖<br>芜湖芜湖芜湖芜湖<br>芜湖芜湖芜湖芜湖芜湖<br>芜湖芜湖芜湖芜湖芜湖<br>芜湖芜湖芜湖芜湖<br>生日芜湖<br>From：<br>芜湖';
+    var i = 0;
+    function typing(){
+        birth.style.display = 'block';
+     var divTyping = document.getElementById('typing');
+     if (i <= str.length) {
+      divTyping.innerHTML = str.slice(0, i++) + '_';
+      setTimeout('typing()', 100);
+     }
+     else{
+      divTyping.innerHTML = str;
+     }
+    }
+    
+</script>
+
+</html>
